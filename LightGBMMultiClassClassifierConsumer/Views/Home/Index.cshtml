@@ -1,0 +1,24 @@
+﻿@model LightGBMMultiClassClassifierConsumer.Dtos.PredictionRequest
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form method="Post" action="/Home/Index">
+        Enter Query: <textarea name="TicketText">
+
+             </textarea> <br />
+        <input type="submit" value="Send" />
+        </form>
+    @if (Model != null)
+        {
+
+            @if (Model.Category != null)
+            {
+              <h2> Predicated Category:@Model.Category</h2>    
+            }
+        }
+
+    </body>
+    </html>
